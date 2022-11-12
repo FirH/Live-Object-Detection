@@ -26,6 +26,6 @@ class VideoTransformer(VideoTransformerBase):
 choice = st.sidebar.selectbox("Select Activity", ['Choice 1', 'Choice 2'])
 
 if(choice == 'Choice 2') :
-    webrtc_streamer(key="example",video_transformer_factory=VideoTransformer)
+    webrtc_streamer(key="example",video_processor_factory=VideoTransformer)
 else :
     pass
